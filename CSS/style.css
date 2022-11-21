@@ -1,0 +1,14 @@
+/*Estilo utilizando elementos html*/
+/*Selector de elemento*/
+h1{
+    /*Propiedades*/
+    text-align: center;
+}
+/*Selector de clase*/
+.fuente-nombre{
+    text-align: center;
+    color:maroon
+}
+li.fuente-especial {
+    color:red;
+}
