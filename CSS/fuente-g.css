@@ -2,6 +2,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20%;
 }
 .cinzel-font{
     font-family: 'Cinzel', serif;
