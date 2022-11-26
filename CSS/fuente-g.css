@@ -1,12 +1,17 @@
+*{
+    background-color: black;
+}
+
 .box-1{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20%;
-    /*ffsdjfsdjf*/
 }
 .cinzel-font{
+    color: aliceblue;
+    font-size: 5em;
     font-family: 'Cinzel', serif;
+    padding: 13%;
 }
 /* cinzel-600 - latin */
 @font-face {

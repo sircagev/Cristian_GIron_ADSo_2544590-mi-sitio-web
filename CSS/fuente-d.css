@@ -1,0 +1,16 @@
+*{
+    background-color: blue;
+}
+
+.box-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.waltograph-disney-font{
+    color: aliceblue;
+    font-size: 11.5em;
+    font-family: 'WaltographRegular';
+    font-weight: normal;
+    font-style: normal;
+}
