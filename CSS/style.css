@@ -26,6 +26,13 @@ li.fuente-especial {
     color:red;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
 /* anton-regular - latin */
 @font-face {
     font-family: 'Anton';
