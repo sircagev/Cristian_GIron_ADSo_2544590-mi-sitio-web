@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1{
+    display: flex;
+    border: 4px solid black;
+    background-color: cyan;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph{
+    font-size: 2.5em;
+    margin-left: 150px;
+    margin-right: 200px;
+    text-align: center;
+    border: 3px solid red;
+}
+
+.bordes{
+    font-size: 40px;
+    text-align: center;
+}
