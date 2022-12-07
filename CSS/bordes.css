@@ -99,7 +99,7 @@ body{
     font-size: 30px;
     text-align: left;
     border: 5px ridge rgb(202, 106, 106);
-    margin: 0;
+    margin: 20px;
 }
 
 .p2{
@@ -114,4 +114,24 @@ body{
     text-align: right;
     border: 5px outset white;
     margin: 25px;
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    display: flex;
+    height: 800px;
+    width: 800px;
+    border-radius: 400px;
+    background-color: red;
+    border: 8px dotted white;
+    justify-content: center;
+    align-items: center;
+}
+
+.pcircle{
+    color: white;
+    font-size: 40px;
 }
