@@ -1,0 +1,86 @@
+h1{
+    text-align: center;
+}
+
+.contenedor-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    box-shadow: 10px 10px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.box-2{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    box-shadow: 15px 15px 5px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.box-3{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: lawngreen;
+    box-shadow: 15px 15px 5px gold;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.box-4{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: darkmagenta;
+    box-shadow: 15px 15px 25px fuchsia inset;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.box-5{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.box-5:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px indigo, -5px 5px 5px indigo, 0px -5px 5px indigo;
+}
+
+p{
+    color: wheat;
+}
+
+.p-3{
+    color: black;
+}
+
+.p-5{
+    padding: 10px;
+    text-align: center;
+}
