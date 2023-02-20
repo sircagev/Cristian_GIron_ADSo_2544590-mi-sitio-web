@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: collapse;
+    border-radius: 100px;
+}
+
+th, td{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(194,198,198,255);
+}
+
+.azul{
+    background-color: darkcyan;
+    color: white;
+}
+
+.basic{
+    background-color: green;
+    color: white;
+}
+
+.silver{
+    background-color: rgba(66,167,255,255);
+    color: white;
+}
+
+.golden{
+    background-color: orange;
+    color: white;
+}
+
+.titanium{
+    background-color: blueviolet;
+    color: white;
+}
+
+.cont{
+    background-color: beige;
+}

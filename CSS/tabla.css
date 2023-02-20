@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: collapse;
+
+}
+
+th{
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border-right: 1px dashed rgb(97, 181, 214);
+}
+
+.ut{
+    border-top: 1px solid black ;
+}
+
+.ub{
+    border-bottom: 1px solid black ;
+}
+
+.imagen{
+    height: 100px;
+    width: 250px;
+    padding: 1px;
+}
+
+img{
+    width: 100%;
+}
