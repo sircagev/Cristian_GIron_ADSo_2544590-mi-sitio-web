@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/formulario.css">
+</head>
+<body>
+    <div class="form-box">
+        <h1>Registro para reserva de Vuelos</h1>
+        <form>
+            <legend><span class="legend-text"> Por favor, Ingrese los datos</span></legend>
+            <label>Ingrese el número de documento</label>
+            <input type="number" name="Número de Documento" class="nose">
+            <label>Ingrese el primer nombre</label>
+            <input type="text" name="Primer Nombre" class="nose">
+            <label>Ingrese el segundo nombre</label>
+            <input type="text" name="Segundo Nombre" class="nose">
+            <label>Ingrese el primer apellido</label>
+            <input type="text" name="Primer apellido" class="nose">
+            <label>Ingrese el Segundo Apellido</label>
+            <input type="text" name="Segundo apellido" class="nose">
+            <label>¿Desea hacer alguna consulta especial a la aerolínea?</label>
+            <Textarea rows="5"></Textarea>
+            <label>Seleccione su género</label>
+            <div class="generos">
+                <input type="radio" name="consulta" id="genero"><span>Masculino</span><br>
+                <input type="radio" name="consulta" id="genero"><span>Femenino</span><br>
+                <input type="radio" name="consulta" id="genero"><span>Indeterminado</span>
+            </div><br>
+            <label>Seleccione las Aerolíneas con las cuales le gustaría viajar</label>
+            <div class="aerolineas">
+                <input type="checkbox" name="aerolinea" id="genero"><span>AVIANCA</span><br>
+                <input type="checkbox" name="aerolinea" id="genero"><span>Airlines</span><br>
+                <input type="checkbox" name="aerolinea" id="genero"><span>Cosmos</span>
+            </div><br>
+            <label>Seleccione su destino</label>
+            <select name="destino" id="" class="destino">
+                <option value="SanAndres">San Andres</option>
+                <option value="Cratagena">Cartagena</option>
+                <option value="SantaMarta">Santa Marta</option>
+                <option value="Medeliin">Medellín</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Cali">Cali</option>
+            </select><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

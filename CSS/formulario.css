@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+legend{
+    background-color: rgb(71, 156, 195);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.legend-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.nose, textarea{
+    margin-bottom: 20px;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: none;
+}
+
+textarea{
+    border: 1px solid black;
+}
+
+input[type ="submit"]{
+    background-color: rgb(71, 156, 195);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    width: 20%;
+}
+
+.generos, .aerolineas, .destino{
+    width: 70%;
+}
