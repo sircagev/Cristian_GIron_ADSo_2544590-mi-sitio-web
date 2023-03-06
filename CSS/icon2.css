@@ -1,0 +1,12 @@
+.menu-general{
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 15px;
+}
+
+nav{
+    font-family: 'TT Hoves Variable';
+}
