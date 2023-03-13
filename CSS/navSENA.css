@@ -11,13 +11,22 @@
 .hor{
     margin: 0;
     padding: 10px;
-    border-right: 1px solid rgb(18, 161, 18);
+    border-right: 1px solid #c8edc8;
     border-radius: 0;
-    background-color: rgba(255, 255, 255, 0.418);
+    background-color: #fdfdfd;
 }
 
 .h{
     color: black;
+}
+
+.hor:hover{
+    background-color: #fdfdfd;
+}
+
+span{
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navVertical{
@@ -37,8 +46,9 @@ li{
     font-size: 0.9em;
     list-style: none;
     padding: 20px;
-    margin: 5px;
+    margin: 0;
     background-color: rgb(87, 87, 86);
+    border-bottom: 1px solid white;
     border-radius: 5px
 }
 
@@ -49,4 +59,8 @@ li:hover{
 a{
     text-decoration: none;
     color: white;
+}
+
+ul{
+    padding: 0;
 }
