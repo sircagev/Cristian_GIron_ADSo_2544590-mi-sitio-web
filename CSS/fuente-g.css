@@ -7,12 +7,14 @@
     justify-content: center;
     align-items: center;
 }
+
 .cinzel-font{
     color: aliceblue;
     font-size: 5em;
     font-family: 'Cinzel', serif;
     padding: 13%;
 }
+
 /* cinzel-600 - latin */
 @font-face {
     font-family: 'Cinzel';
