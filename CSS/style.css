@@ -62,31 +62,94 @@ ul{
   margin-top: 100px;
   margin-left: 12%;
   margin-right: 10%;
+  padding-top: 100px;
   background-color: gray;
 }
 
 .about{
-  height: 80vh;
+  display: flex;
   margin-top: 25px;
   margin-left: 12%;
   margin-right: 10%;
-  background-color: gray;
+  padding-top: 100px;
+}
+
+.presentation{
+  width: 50%;
+  padding-left: 25px;
+  color: aliceblue;
+}
+
+.photo{
+  display: flex;
+  width: 50%;
+  color: aliceblue;
+  font-size: 10em;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills{
-  height: 80vh;
+  height: auto;
   margin-top: 25px;
   margin-left: 12%;
   margin-right: 10%;
-  background-color: gray;
+  padding-top: 100px;
+}
+
+.container-icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-icon{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.fa-html5, .fa-css3-alt, .fa-square-js{
+  font-size: 3.5em;
 }
 
 .work{
-  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
   margin-top: 25px;
   margin-left: 12%;
   margin-right: 10%;
-  background-color: gray;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.lesson-work{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 200px;
+}
+
+.work .img{
+  display: flex;
+  width: 220px;
+  height: 165px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+span{
+  color: yellow;
 }
 
 .contacts{
@@ -95,6 +158,7 @@ ul{
   margin-left: 12%;
   margin-right: 10%;
   margin-bottom: 5vh;
+  padding-top: 100px;
   background-color: gray;
 }
 
