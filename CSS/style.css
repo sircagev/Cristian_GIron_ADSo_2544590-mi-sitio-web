@@ -61,20 +61,26 @@ ul{
   background-color: aliceblue;
 }
 
-.home{
-  height: 80vh;
-  margin-top: 100px;
+.home, .about, .skills, .work, .contacts{
   margin-left: 12%;
   margin-right: 10%;
   padding-top: 100px;
-  background-color: gray;
 }
 
-.about{
+.home{
+  margin-top: 100px;
+}
+
+.about, .skills, .work, .contacts{
   margin-top: 25px;
-  margin-left: 12%;
-  margin-right: 10%;
-  padding-top: 100px;
+}
+
+.work{
+  justify-content: center;
+}
+
+.contacts{
+  margin-bottom: 5vh;
 }
 
 .lalala{
@@ -88,6 +94,15 @@ ul{
   color: aliceblue;
 }
 
+h1{
+  font-size: 2.7em;
+  padding-bottom: 10px;
+}
+
+.presentation h2{
+  text-align: right;
+}
+
 .photo{
   display: flex;
   width: 50%;
@@ -97,12 +112,16 @@ ul{
   align-items: center;
 }
 
-.skills{
-  height: auto;
-  margin-top: 25px;
-  margin-left: 12%;
-  margin-right: 10%;
-  padding-top: 100px;
+.paragraph-presentation{
+  margin-top: 85px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+img{
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 .container-icons{
@@ -123,15 +142,6 @@ ul{
 
 .fa-html5, .fa-css3-alt, .fa-square-js{
   font-size: 3.5em;
-}
-
-.work{
-  height: auto;
-  margin-top: 25px;
-  margin-left: 12%;
-  margin-right: 10%;
-  padding-top: 100px;
-  justify-content: center;
 }
 
 .work2{
@@ -222,14 +232,6 @@ span{
   border-radius: 43px;
 }
 
-.contacts{
-  margin-top: 25px;
-  margin-left: 12%;
-  margin-right: 10%;
-  margin-bottom: 5vh;
-  padding-top: 100px;
-}
-
 .title-skill{
   display: flex;
   align-items: center;
@@ -238,6 +240,8 @@ span{
 h2{
   color: aliceblue;
   padding-right: 20px;
+  font-family: 'Crimson Text', serif;
+  font-size: 2em;
 }
 
 .line-skill{
