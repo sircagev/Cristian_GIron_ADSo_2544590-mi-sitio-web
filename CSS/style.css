@@ -51,6 +51,10 @@ ul{
   font-size: 20px;
 }
 
+.fa-brands:hover{
+  color: #FF0000;
+}
+
 .line{
   width: 1px;
   height: 20vh;
