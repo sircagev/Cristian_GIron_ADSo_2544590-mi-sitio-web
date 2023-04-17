@@ -4,18 +4,54 @@
 }
 
 nav{
-    background-color: rgb(64, 64, 64);
+    font-size: 1.4em;
+    font-weight: 900px;
     font-family: verdana, sans-serif;
-    font-size: 1.3em;
 }
 
+/*Todos los menis hijos de nav tienen posicionamiento absoluto*/
 nav ul{
-    list-style: none;
-    color: aliceblue;
     width: 100%;
+    background-color: rgb(64, 64, 64);
+    list-style: none;
+    color: white;
+    position: absolute;
+}
+
+nav ul li{
+    line-height: 70px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li:hover{
+    background-color: rgb(24, 24, 24);
 }
 
 a{
     text-decoration: none;
-    color: aliceblue;
+    color: white;
+    padding: 0 25px;
+    display: block;
+}
+/*Hijo directo de nav*/
+nav > ul > li{
+    float: left;
+}
+/*Menú de segundo nivel y de tercer nivel*/
+nav li li{
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav li:hover > ul > li{
+    max-height: 500px;
+    overflow: visible;
+    background-color: rgb(24, 24, 24);
+}
+
+nav ul ul ul{
+    left: 100%;
+    top: 0;
 }

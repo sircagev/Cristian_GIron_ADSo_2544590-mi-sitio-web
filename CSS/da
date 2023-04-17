@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+    
+body{
+    background-color:black
+}
+
+ul{
+    list-style:none
+}
+
+.ultop-menu{
+    display:flex;
+    background-color:#FF0000;
+    width:100%;
+    align-items:center;
+    justify-content:flex-end;
+    height:85px;
+    margin-right:200px;
+    padding:15px;
+    padding-right:45px;
+    position:fixed;
+    top:0
+}
+
+.listtopmenu a{
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+    padding:15px;
+    padding-left:50px;
+    font-family:'Crimson Text',serif
+}
+
+.contact{
+    display:flex;
+    flex-direction:column-reverse;
+    width:10%;
+    height:95vh;
+    position:fixed;
+    align-items:center;
+    top:0
+}
+
+.fa-brands{
+    color:white;
+    padding:20px;
+    font-size:20px
+}
+
+.fa-brands:hover{
+    color:#FF0000
+}
+
+.line{
+    width:1px;
+    height:20vh;
+    background-color:aliceblue
+}
+
+.home,.about,.skills,.work,.contacts{
+    margin-left:12%;
+    margin-right:10%;
+    padding-top:100px
+}
+
+.home{
+    margin-top:100px
+}
+
+.about,.skills,.work,.contacts{
+    margin-top:25px
+}
+
+.work{
+    justify-content:center
+}
+
+.contacts{
+    margin-bottom:5vh
+}
+
+.lalala{
+    display:flex;
+    padding-top:15px
+}
+
+.presentation{
+    width:50%;
+    padding-left:25px;
+    color:aliceblue
+}
+
+h1{
+    font-size:2.7em;
+    padding-bottom:10px
+}
+
+.presentation h2{
+    text-align:right
+}
+
+.photo{
+    display:flex;
+    width:50%;
+    color:aliceblue;
+    font-size:10em;
+    justify-content:center;
+    align-items:center
+}
+    
+.paragraph-presentation{
+    margin-top:85px;
+    font-size:1.5em;
+    text-align:center
+}
+
+img{
+    width:320px;
+    border-radius:20px;
+    box-shadow:rgba(255,255,255,0.35) 0 5px 15px
+}
+
+.container-icons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding-top:25px
+}
+
+.box-icon{
+    display:flex;
+    flex-direction:column;
+    width:20%;
+    justify-content:center;
+    align-items:center;
+    color:white
+}
+
+.fa-html5,.fa-css3-alt,.fa-square-js{font-size:3.5em}.work2{padding-top:25px;display:flex;flex-wrap:wrap;justify-content:center}.lesson-work{display:flex;justify-content:center;align-items:center;width:23%;margin:1%;height:200px}.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9,.img10{display:flex;height:165px;background-size:cover;justify-content:center;align-items:center}.img1{background-image:url('../images/foto1.PNG')}.img2{background-image:url('../images/photo2.PNG')}.img3{background-image:url('../images/photo3.PNG')}.img4{background-image:url('../images/photo4.PNG')}.img5{background-image:url('../images/photo5.PNG')}.img6{background-image:url('../images/photo6.PNG')}.img7{background-image:url('../images/photo7.PNG')}.img8{background-image:url('../images/photo8.PNG')}.img9{background-image:url('../images/photo9.PNG')}.img10{background-image:url('../images/photo10.PNG')}.lesson-work:hover{transform:scale(1.2);box-shadow:rgba(255,255,255,0.3) 0 19px 38px,rgba(255,255,255,0.22) 0 15px 12px}a{text-decoration:none}span{color:yellow;text-align:center}.pspan{display:flex;justify-content:center;align-items:center;width:86px;background-color:#950101;height:86px;border-radius:43px}.title-skill{display:flex;align-items:center}h2{color:aliceblue;padding-right:20px;font-family:'Crimson Text',serif;font-size:2em}.line-skill{width:100%;padding-left:20px;padding-right:20px;height:1px;background-color:aliceblue}.icon-contact{display:flex;justify-content:center;padding:30px}.uno,.dos,.tres,.cuatro,.cinco{font-size:3.5em;padding:40px}.contact-bottom{color:aliceblue;text-align:center;padding:10px;font-size:1.3em}
