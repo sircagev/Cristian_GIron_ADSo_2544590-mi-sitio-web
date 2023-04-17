@@ -1,0 +1,36 @@
+.main-box{
+    height: 2500px;
+    width: 100%;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.box-static{
+    background-color: rgb(96, 96, 96);
+}
+
+.box-absolute{
+    background-color: darkcyan;
+    position: absolute;
+    bottom: 20px;
+    right: -150px;
+}
+
+.box-fixed{
+    background-color: goldenrod;
+    position: fixed;
+    top: 500px;
+    right: 10px;
+}
+
+.box-relative{
+    background-color: dodgerblue;
+    position: relative;
+}
