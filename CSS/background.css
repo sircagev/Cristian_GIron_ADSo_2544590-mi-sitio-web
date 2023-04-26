@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/fondos-gratis-45.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(255, 255, 255,.7);
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fuera{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    position: relative;
+    
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.icon-user1{
+    font-size: 6em;
+    color: gray;
+    padding: 10px;
+    
+}
+
+.usuario{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+input[type="text"]{
+    border: none;
+    background-color: transparent;
+    padding-bottom: 3px;
+    margin-left: 25px;
+    border-bottom: 1px solid black;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
