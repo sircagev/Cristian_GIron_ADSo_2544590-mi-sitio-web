@@ -165,7 +165,7 @@ img{
   justify-content: center;
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12{
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13{
   height: 165px;
   background-size: cover;
   background-position: center;
@@ -218,6 +218,10 @@ img{
 }
 
 .img12{
+  color: white;
+}
+
+.img13{
   color: white;
 }
 
