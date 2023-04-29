@@ -5,25 +5,39 @@
 }
 
 body{
-    background-color: black;
+    background-image: url('../images/fondo2.jpeg');
+    width: 100%;
+    background-size: cover;
 }
 
 ul{
     list-style: none;
 }
 
+.top-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: midnightblue;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.top-menu p{
+  margin: 0px 30px;
+  font-family: 'Crimson Text', serif;
+  color: white;
+  font-size: 35px;
+}
+
 .ultop-menu{
-    display: flex;
-    background-color: #FF0000;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    height: 85px;
-    margin-right: 200px;
-    padding: 15px;
-    padding-right: 45px;
-    position: fixed;
-    top: 0;
+  display: flex;
+  align-items: center;
+  height: 85px;
+  padding: 15px;
+  padding-right: 45px;
+  right: 0;
 }
 
 .listtopmenu a{
@@ -151,21 +165,12 @@ img{
   justify-content: center;
 }
 
-.lesson-work{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 23%;
-  margin: 1%;
-  height: 200px;
-}
-
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10{
-  display: flex;
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12{
   height: 165px;
   background-size: cover;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+  width: 100%;
+  border-radius: 20% 0 0;
 }
 
 .img1{
@@ -208,7 +213,32 @@ img{
   background-image: url('../images/photo10.PNG');
 }
 
-.lesson-work:hover{
+.img11{
+  color: white;
+}
+
+.img12{
+  color: white;
+}
+
+.lesson-work1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  margin: 1%;
+  border: 1px solid white;
+  border-radius: 20% 0;
+}
+
+.lesson-work1 span{
+  display: flex;
+  margin: 8px 0 ;
+  height: auto;
+}
+
+.lesson-work1:hover {
   transform: scale(1.2);
   box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
 }
@@ -220,16 +250,6 @@ a{
 span{
   color: yellow;
   text-align: center;
-}
-
-.pspan{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 86px;
-  background-color:#950101;
-  height: 86px;
-  border-radius: 43px;
 }
 
 .title-skill{
