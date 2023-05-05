@@ -33,26 +33,27 @@
     border-radius: 50%;
     border: 1px solid gray;
     position: relative;
-    
+    bottom: 160px;
+    left: 110px;
 }
 
 h1{
     width: 100%;
     text-align: center;
     position: relative;
+    bottom: 125px;
 }
 
 .icon-user1{
     font-size: 6em;
     color: gray;
     padding: 10px;
-    
 }
 
 .usuario{
     display: flex;
     justify-content: center;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 input[type="text"]{
@@ -65,4 +66,34 @@ input[type="text"]{
 
 input[type="text"]:focus{
     outline: none;
+}
+
+.lalala{
+    position: relative;
+    bottom: 40px;
+}
+
+button{
+    position: relative;
+    left: 125px;
+    width: 100px;
+    height: 22px;
+    top: 20px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(190,190,190);
+}
+
+button:active{
+    background-color: rgb(120,120,120);
+}
+
+a{
+    width: 100%;
+}
+
+a p{
+    text-align: center;
 }
