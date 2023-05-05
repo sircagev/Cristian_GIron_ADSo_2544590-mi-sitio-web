@@ -68,6 +68,18 @@ input[type="text"]:focus{
     outline: none;
 }
 
+input[type="password"]{
+    border: none;
+    background-color: transparent;
+    padding-bottom: 3px;
+    margin-left: 25px;
+    border-bottom: 1px solid black;
+}
+
+input[type="password"]:focus{
+    outline: none;
+}
+
 .lalala{
     position: relative;
     bottom: 40px;
