@@ -165,7 +165,7 @@ img{
   justify-content: center;
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14{
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15{
   height: 165px;
   background-size: cover;
   background-position: center;
@@ -226,6 +226,10 @@ img{
 }
 
 .img14{
+  color: white;
+}
+
+.img15{
   color: white;
 }
 
