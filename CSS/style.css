@@ -161,7 +161,8 @@ img{
 .work2{
   padding-top: 25px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
   justify-content: center;
 }
 

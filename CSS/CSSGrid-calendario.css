@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-content{
+    display: grid;
+    width: 1200px;
+    height: 700px;
+    margin: 100px auto;
+    grid-gap: 15px;
+    grid-template-columns: repeat(7, minmax(50px,auto));
+}
+
+h1{
+    display: flex;
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre-semana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: palevioletred;
+    color: aliceblue;
+    font-size: 1.3em;
+}
+
+.dia-semana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+
+.d1{
+    grid-column-start: 6;
+}
+
+.d3, .d10, .d17, .d8, .d24, .d25, .d31{
+    background-color: rgb(255, 141, 160);
+}
+
+.d2, .d9, .d16, .d23, .d30{
+    background-color: rgb(253, 151, 168);
+}
