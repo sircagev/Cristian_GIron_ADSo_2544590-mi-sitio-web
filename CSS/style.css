@@ -1,17 +1,17 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    background-image: url('../images/fonfo3.jpg');
-    width: 100%;
-    background-size: cover;
+  background-image: url('../images/fonfo3.jpg');
+  width: 100%;
+  background-size: cover;
 }
 
 ul{
-    list-style: none;
+  list-style: none;
 }
 
 .top-menu{
@@ -41,12 +41,12 @@ ul{
 }
 
 .listtopmenu a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    padding: 15px;
-    padding-left: 50px;
-    font-family: 'Crimson Text', serif;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  padding-left: 50px;
+  font-family: 'Crimson Text', serif;
 }
 
 .contact{
@@ -166,7 +166,7 @@ img{
   justify-content: center;
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17{
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18{
   height: 165px;
   background-size: cover;
   background-position: center;
@@ -240,6 +240,10 @@ img{
 
 .img17{
   background-image: url('../images/photo17.PNG');
+}
+
+.img18{
+  background-color: #FF0000;
 }
 
 .lesson-work1{
