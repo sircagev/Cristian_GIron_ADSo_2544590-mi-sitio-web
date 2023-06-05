@@ -141,6 +141,8 @@ nav{
         "empty-izq article-4 empty-der" auto 
         "empty-izq article-5 empty-der" auto 
         "empty-izq article-6 empty-der" auto   / 
-        1fr 450px 1fr; 
+        1fr 400px 1fr; 
+    }.img-article{
+        height: 286px;
     }
 }
