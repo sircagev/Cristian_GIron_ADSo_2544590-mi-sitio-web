@@ -131,3 +131,16 @@ nav{
         height: 320px;
     }
 }
+
+@media only screen and (max-width:500px){
+    .article-box{
+        gap: 0;
+        grid-template: "empty-izq article-1 empty-der" auto
+        "empty-izq article-2 empty-der" auto
+        "empty-izq article-3 empty-der" auto
+        "empty-izq article-4 empty-der" auto 
+        "empty-izq article-5 empty-der" auto 
+        "empty-izq article-6 empty-der" auto   / 
+        1fr 450px 1fr; 
+    }
+}
