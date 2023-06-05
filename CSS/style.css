@@ -154,7 +154,7 @@ img{
   color: white;
 }
 
-.fa-html5, .fa-css3-alt, .fa-square-js{
+.fa-html5, .fa-css3-alt, .fa-square-js, .fa-php{
   font-size: 3.5em;
 }
 
@@ -166,7 +166,7 @@ img{
   justify-content: center;
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15{
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17{
   height: 165px;
   background-size: cover;
   background-position: center;
@@ -215,23 +215,31 @@ img{
 }
 
 .img11{
-  color: white;
+  background-image: url('../images/photo11.PNG');
 }
 
 .img12{
-  color: white;
+  background-image: url('../images/photo12.PNG');
 }
 
 .img13{
-  color: white;
+  background-image: url('../images/photo13.PNG');
 }
 
 .img14{
-  color: white;
+  background-image: url('../images/photo14.PNG');
 }
 
 .img15{
-  color: white;
+  background-image: url('../images/photo15.PNG');
+}
+
+.img16{
+  background-image: url('../images/photo16.PNG');
+}
+
+.img17{
+  background-image: url('../images/photo17.PNG');
 }
 
 .lesson-work1{
