@@ -122,6 +122,10 @@ label{
     border-radius: 25px;
 }
 
+.text-article{
+    margin-bottom: 25px;
+}
+
 .text-content{
     color: black;
     font-size: 1.2em;
