@@ -30,7 +30,7 @@ body{
 .nav {
     width: 1200px;
     height: 100px;
-    padding: 10px;
+    padding: 5px;
     display: grid;
     grid-template:  "nav1 nav2 nav3" auto
                     "nav4 nav5 nav6" auto/ 
@@ -64,33 +64,70 @@ body{
 }
 
 .nav1{
+    padding: 5px;
     grid-area: nav1;
+    box-sizing: border-box;
 }
 
 .nav2{
+    padding: 5px;
     grid-area: nav2;
 }
 
 .nav3{
     grid-area: nav3;
 }
+
+.nav3 img{
+    width: 100%;
+}
+
 .nav-menu-cp-send{
     color: #0000006b;
+    font-size: 13px;
 }
 
 .nav-menu-link-cp{
     color: #000000a6;
 }
 .nav4{
+    display: flex;
     grid-area: nav4;
+}
+
+.nav4 i{
+    padding: 5px;
 }
 
 .nav5{
     grid-area: nav5;
 }
 
+ul{
+    padding-top: 15px;
+    width: 90%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav5 ul{
+    justify-content: space-around;
+    color: #33333399;
+}  
+
 .nav6{
+    display: flex;
     grid-area: nav6;
+    justify-content: right;
+}
+
+.nav6 ul{
+    justify-content: flex-end;
+}
+
+.nav6 ul li{
+    margin-left: 25px ;
 }
 
 .left{
@@ -214,6 +251,7 @@ p{
 
 span{
     color: green;
+    font-size: 14px;
 }
 
 .antes{
@@ -267,6 +305,10 @@ button{
     height: auto;
 }
 
+h2{
+    text-align: center;
+}
+
 @keyframes rotateBanner {
     0%, 100% {
         transform: translateX(0);
@@ -292,8 +334,6 @@ button{
                     "piepagina piepagina piepagina"/ 
                     1fr 100% 1fr; /* Cambiar el ancho del banner a 100% */
     }
-
-    
 }
 
 @media (max-width: 1250px){
@@ -302,50 +342,47 @@ button{
     }
 }
 
-@media (max-width: 1100px){
-    .pago3{
+@media (max-width: 1200px){
+    .moda, .compras{
         display: none;
     }
+}
 
-    .pago{
-        width: auto;
+@media (max-width: 1100px){
+    .pago, .pago3, .supermercado{
+        display: none;
     }
 }
 
 @media (max-width: 1000px){
-    .art-4{
+    .art-4, .art-5, .ayuda{
         display: none;
     }
-    
-    .art-5{
-        display: none;
-    }
-
     .piepagina{
         flex-direction: column;
     }
-
     .info-slide{
         width: 80%;
     }
 }
 
-/* Estilos para pantallas pequeñas (por ejemplo, teléfonos móviles) */
-@media (max-width: 768px) {
-    .all {
-        grid-template:  
-                    "left" auto
-                    "banner" auto
-                    "footer" 170px
-                    "articulos" auto
-                    "piepagina" auto;
+@media (max-width: 800px){
+    .cart{
+        display: none;
     }
+}
 
+@media (max-width: 391px){
     .nav {
         width: 100%;
-        grid-template:  "nav1 nav2" auto
-                        "nav3 nav4" auto
-                        "nav5 nav6" auto/ 
-                        1fr 2fr;
+        height: 100px;
+        padding: 5px;
+        display: grid;
+        grid-template:  "nav1 nav2 nav1" auto
+                        "nav4 nav4 nav4" auto/ 
+                        1fr 4fr 1fr;
+    }
+    .nav3, .nav5, .nav6{
+        display: none;
     }
 }
