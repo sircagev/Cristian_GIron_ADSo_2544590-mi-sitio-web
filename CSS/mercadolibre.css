@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5E8E8;
+}
+
+/* Estilos generales para pantallas grandes */
+.all {
+    display: grid;
+    width: 100%;
+    grid-template:  
+                    "left banner rigth" auto
+                    "left footer rigth" 170px
+                    "left articulos rigth" auto
+                    "piepagina piepagina piepagina"/ 
+                    1fr 1600px 1fr;
+}
+
+.navs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff159;
+}
+
+.nav {
+    width: 1200px;
+    height: 100px;
+    padding: 10px;
+    display: grid;
+    grid-template:  "nav1 nav2 nav3" auto
+                    "nav4 nav5 nav6" auto/ 
+                    1fr 3fr 2fr;
+}
+
+/* Estilos para pantallas medianas (por ejemplo, tabletas) */
+@media (max-width: 1024px) {
+    .all {
+        grid-template:  
+                    "left banner rigth" auto
+                    "left footer rigth" 170px
+                    "left articulos rigth" auto
+                    "piepagina piepagina piepagina"/ 
+                    1fr 100% 1fr; /* Cambiar el ancho del banner a 100% */
+    }
+
+    .nav {
+        width: 100%;
+        grid-template:  "nav1 nav2" auto
+                        "nav3 nav4" auto
+                        "nav5 nav6" auto/ 
+                        1fr 2fr;
+    }
+}
+
+/* Estilos para pantallas pequeñas (por ejemplo, teléfonos móviles) */
+@media (max-width: 768px) {
+    .all {
+        grid-template:  
+                    "left" auto
+                    "banner" auto
+                    "footer" 170px
+                    "articulos" auto
+                    "piepagina" auto;
+    }
+
+    .nav {
+        width: 100%;
+        grid-template:  "nav1 nav2" auto
+                        "nav3 nav4" auto
+                        "nav5 nav6" auto/ 
+                        1fr 2fr;
+    }
+}
+/* Cambiar el tamaño del icono */
+.fa-map-marker-alt {
+    font-size: 24px;
+    color: #0000008f; /* Cambiar el color si es necesario */
+}
+
+/* Tu CSS actual */
+
+/* Agrega este estilo para alinear el botón junto al campo de entrada de texto */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del botón de búsqueda */
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo del ícono de búsqueda en el botón */
+.search-button .nav-icon-search {
+    width: 24px; /* Ajusta el tamaño según sea necesario */
+    height: 24px; /* Ajusta el tamaño según sea necesario */
+    fill: #000; /* Cambia el color del icono según lo necesites */
+}
+
+
+.nav1{
+    grid-area: nav1;
+}
+
+.nav2{
+    grid-area: nav2;
+}
+
+.nav3{
+    grid-area: nav3;
+}
+.nav-menu-cp-send{
+    color: #0000006b;
+}
+
+.nav-menu-link-cp{
+    color: #000000a6;
+}
+.nav4{
+    grid-area: nav4;
+}
+
+.nav5{
+    grid-area: nav5;
+}
+
+.nav6{
+    grid-area: nav6;
+}
+
+.left{
+    grid-area: left;
+}
+
+.rigth{
+    grid-area: rigth;
+}
+
+.banner{
+    display: flex;
+    grid-area: banner;
+    background-color: rgb(162, 29, 29);
+}
+
+.footer{
+    display: flex;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulos{
+    grid-area: articulos;
+    height: 543px;
+}
+
+.piepagina{
+    grid-area: piepagina;
+    height: 300px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.pago{
+    height: 90px;
+    background-color: #fff;
+    width: 1184px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.pago, .pago1, .pago2, .pago3, .pago4{
+    display: flex;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,helvetica,roboto,arial,sans-serif;
+    font-size: 12px;
+}
+
+.pago1 img, .pago2 img, .pago3 img, .pago4 img{
+    height: 48px;
+    margin-right: 10px;
+}
+
+.pago1{
+    width: 269px;
+    padding: 20px;
+}
+
+.pago2{
+    width: 374px;
+    padding: 20px;
+}
+
+.pago3{
+    width: 275px;
+    padding: 20px;
+}
+
+.pago3{
+    width: 268px;
+    padding: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.art-1, .art-2, .art-3, .art-4, .art-5{
+    margin: 0 12px 16px 0;
+    padding: 10px;
+    width: 230px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.art-1 img , .art-2 img , .art-3 img , .art-4 img , .art-5 img{
+    width: 90%;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.articulos2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo{
+    display: flex;
+}
+
+p{
+    margin: 1px;
+    padding: 5px;
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+}
+
+.envio{
+    color: green;
+}
+
+span{
+    color: green;
+}
+
+.antes{
+    font-size: 12px;
+    color: gray;
+}
+
+.actual{
+    font-size: 24px;
+}
+
+.info-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    padding: 40px;
+    justify-content: center;
+}
+
+.info-slide p{
+    text-align: center;   
+}
+
+input[type="text"]{
+    border: none;
+    width: 93%;
+    height: 40px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+button{
+    width: 10%;
+    height: 40px;
+    
+}
+.banner-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    animation: rotateBanner 16s linear infinite; /* 4 segundos por imagen x 4 imágenes = 16 segundos de duración */
+}
+
+.banner img {
+    width: 100%; /* Para que las imágenes cubran todo el ancho */
+    height: auto;
+}
+
+@keyframes rotateBanner {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+}
