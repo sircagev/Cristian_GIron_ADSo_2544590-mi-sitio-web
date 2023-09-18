@@ -37,52 +37,11 @@ body{
                     1fr 3fr 2fr;
 }
 
-/* Estilos para pantallas medianas (por ejemplo, tabletas) */
-@media (max-width: 1024px) {
-    .all {
-        grid-template:  
-                    "left banner rigth" auto
-                    "left footer rigth" 170px
-                    "left articulos rigth" auto
-                    "piepagina piepagina piepagina"/ 
-                    1fr 100% 1fr; /* Cambiar el ancho del banner a 100% */
-    }
-
-    .nav {
-        width: 100%;
-        grid-template:  "nav1 nav2" auto
-                        "nav3 nav4" auto
-                        "nav5 nav6" auto/ 
-                        1fr 2fr;
-    }
-}
-
-/* Estilos para pantallas pequeñas (por ejemplo, teléfonos móviles) */
-@media (max-width: 768px) {
-    .all {
-        grid-template:  
-                    "left" auto
-                    "banner" auto
-                    "footer" 170px
-                    "articulos" auto
-                    "piepagina" auto;
-    }
-
-    .nav {
-        width: 100%;
-        grid-template:  "nav1 nav2" auto
-                        "nav3 nav4" auto
-                        "nav5 nav6" auto/ 
-                        1fr 2fr;
-    }
-}
 /* Cambiar el tamaño del icono */
 .fa-map-marker-alt {
     font-size: 24px;
     color: #0000008f; /* Cambiar el color si es necesario */
 }
-
-/* Tu CSS actual */
 
 /* Agrega este estilo para alinear el botón junto al campo de entrada de texto */
 .search-form {
@@ -103,7 +62,6 @@ body{
     height: 24px; /* Ajusta el tamaño según sea necesario */
     fill: #000; /* Cambia el color del icono según lo necesites */
 }
-
 
 .nav1{
     grid-area: nav1;
@@ -163,7 +121,7 @@ body{
 
 .piepagina{
     grid-area: piepagina;
-    height: 300px;
+    height: auto;
     display: flex;
     background-color: #fff;
     justify-content: center;
@@ -192,22 +150,22 @@ body{
 }
 
 .pago1{
-    width: 269px;
+    width: 240px;
     padding: 20px;
 }
 
 .pago2{
-    width: 374px;
+    width: 300px;
     padding: 20px;
 }
 
 .pago3{
-    width: 275px;
+    width: 230px;
     padding: 20px;
 }
 
-.pago3{
-    width: 268px;
+.pago4{
+    width: 240px;
     padding: 20px;
 }
 
@@ -301,7 +259,7 @@ button{
 
 .banner {
     display: flex;
-    animation: rotateBanner 16s linear infinite; /* 4 segundos por imagen x 4 imágenes = 16 segundos de duración */
+    animation: rotateBanner 30s linear infinite; /* 4 segundos por imagen x 4 imágenes = 16 segundos de duración */
 }
 
 .banner img {
@@ -321,5 +279,73 @@ button{
     }
     75% {
         transform: translateX(-100%);
+    }
+}
+
+/* Estilos para pantallas medianas (por ejemplo, tabletas) */
+@media (max-width: 1600px) {
+    .all {
+        grid-template:  
+                    "left banner rigth" auto
+                    "left footer rigth" 170px
+                    "left articulos rigth" auto
+                    "piepagina piepagina piepagina"/ 
+                    1fr 100% 1fr; /* Cambiar el ancho del banner a 100% */
+    }
+
+    
+}
+
+@media (max-width: 1250px){
+    .art-5{
+        display: none;
+    }
+}
+
+@media (max-width: 1100px){
+    .pago3{
+        display: none;
+    }
+
+    .pago{
+        width: auto;
+    }
+}
+
+@media (max-width: 1000px){
+    .art-4{
+        display: none;
+    }
+    
+    .art-5{
+        display: none;
+    }
+
+    .piepagina{
+        flex-direction: column;
+    }
+
+    .info-slide{
+        width: 80%;
+    }
+}
+
+/* Estilos para pantallas pequeñas (por ejemplo, teléfonos móviles) */
+@media (max-width: 768px) {
+    .all {
+        grid-template:  
+                    "left" auto
+                    "banner" auto
+                    "footer" 170px
+                    "articulos" auto
+                    "piepagina" auto;
+    }
+
+    .nav {
+        width: 100%;
+        grid-template:  "nav1 nav2" auto
+                        "nav3 nav4" auto
+                        "nav5 nav6" auto/ 
+                        1fr 2fr;
     }
 }
