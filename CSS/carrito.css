@@ -125,8 +125,9 @@ h3{
     .principal{
         grid-template: "totalPagar totalPagar" auto
                         "totalProducto totalProducto" auto
-                        "imagen descripcion" auto
-                        "acciones acciones" auto/
+                        "imagen descripcion"
+                        "imagen acciones" auto
+                        /
         2fr 3fr;
     }
 }
