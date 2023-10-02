@@ -122,7 +122,11 @@ h3{
 }
 
 @media (min-width:361px){
-    .div1{
-        background-color: rebeccapurple;
+    .principal{
+        grid-template: "totalPagar totalPagar" auto
+                        "totalProducto totalProducto" auto
+                        "imagen descripcion" auto
+                        "acciones acciones" auto/
+        2fr 3fr;
     }
 }
