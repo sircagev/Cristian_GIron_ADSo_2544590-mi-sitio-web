@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.principal{
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template: "totalPagar totalPagar" auto
+                    "totalProducto totalProducto" auto
+                    "imagen imagen" auto
+                    "descripcion descripcion" auto
+                    "acciones acciones" auto/
+                    2fr 3fr;
+    grid-gap: 10px;
+}
+
+.totalPagar{
+    grid-area: totalPagar;
+    text-align: center;
+}
+
+.totalProductos{
+    grid-area: totalProducto;
+    text-align: center;
+}
+
+.imagen{
+    grid-area: imagen;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.descripcion{
+    grid-area: descripcion;
+}
+
+h3{
+    text-align: center;
+}
+
+.description{
+    text-align: justify;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.acciones{
+    grid-area: acciones;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.añadir{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.añadir button {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.añadir button:hover {
+    background-color: #0056b3;
+}
+
+.resta, .suma, .cantidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cantidad{
+    background-color: #f4f4f4;
+    height: auto;
+}
+
+.accionesD{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accionesD button {
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.accionesD button:hover {
+    background-color: #c82333;
+}
+
+@media (min-width:361px){
+    .div1{
+        background-color: rebeccapurple;
+    }
+}
