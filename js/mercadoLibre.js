@@ -9,7 +9,7 @@ class Automovil {
 
 let auto1 = new Automovil("Mercedes", "G63");
 
-inputBusqueda.addEventListener("load", function (event) {
+window.addEventListener("load", function (event) {
 
     let mainContent = document.getElementById("mainContent");
 
@@ -24,16 +24,16 @@ inputBusqueda.addEventListener("load", function (event) {
     boxImg.setAttribute("class", "box-img");
     let imgAuto = document.createElement('img');
     boxImg.appendChild(imgAuto);
-    imgAuto.setAttribute('src', '/* images/landRover.webp */');
+    imgAuto.setAttribute('src', 'images/landRover.webp');
     imgAuto.setAttribute('class', 'img-auto')
 
     // Caja para la informacion
     let boxInfo = document.createElement("div");
     boxProducto.appendChild(boxInfo);
     boxInfo.setAttribute("class", "box-info");
-    let marca = document.createElement('label');
-    boxInfo.appendChild(marca);
+    let marcaLabel = document.createElement('label');
+    boxInfo.appendChild(marcaLabel);
     let textnodoMarca = document.createElement(auto1.marca + "" + auto1.modelo);
-    marca.appendChild(textnodoMarca);
+    marcaLabel.appendChild(textnodoMarca);
 
 })
