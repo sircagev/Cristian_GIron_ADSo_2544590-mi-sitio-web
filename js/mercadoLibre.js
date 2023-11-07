@@ -36,7 +36,7 @@ function mostrarProducto(terminoBusqueda) {
     mainContent.innerHTML = '';    
     autos.forEach(auto => {
         if (auto.marca.toLowerCase().includes(terminoBusqueda.toLowerCase()) || auto.modelo.toLowerCase().includes(terminoBusqueda.toLowerCase())) {
-            
+
             // Caja para el producto
             let boxProducto = document.createElement("div");
             mainContent.appendChild(boxProducto);
@@ -86,4 +86,12 @@ function mostrarProducto(terminoBusqueda) {
             icon.setAttribute('class', 'fa-regular fa-heart');
         }
     });
+}
+
+cargarFiltro();
+
+function cargarFiltro(){
+    let boxFiltro = document.createElement('div');
+    mainContent.appendChild(boxFiltro);
+    boxFiltro.setAttribute('class','box-filtro');
 }

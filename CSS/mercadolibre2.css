@@ -159,5 +159,20 @@ header {
     .infExt{
         font-size: 18px;
     }
-    
+}
+
+@media only screen and (min-width: 900px){
+    .main-content{
+        background-color: rgb(235,235,235,.9);
+        display: grid;
+        grid-template: "box-filtro box-productos"
+    }
+    .box-productos{
+        grid-area: box-productos;
+    }
+    .box-filtro{
+        width: 200px;
+        height: 100vh;
+        background-color: gray;
+    }
 }
