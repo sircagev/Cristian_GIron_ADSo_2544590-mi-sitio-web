@@ -15,9 +15,9 @@ class Automovil {
 
 let auto1 = new Automovil("landRover", "G63", 'images/landRover.webp', 150000000, 2021, 45000, 'Engativa - Bogotá');
 let auto2 = new Automovil("Corvette", "C7 ZR1", 'images/Corvette.jpg', 150000000, 2021, 50000, 'Engativa - Bogotá');
-let auto3 = new Automovil('Mazda', 'ahsdvajsvd', 'images/mazda.jpg', 52155522, 255, 548545, 'Pitalito-Hila');
-let auto4 = new Automovil('Mazda', 'ahsdvajsvd', 'images/mazda.jpg', 52155522, 255, 548545, 'Pitalito-Hila');
-let auto5 = new Automovil('Mazda', 'ahsdvajsvd', 'images/mazda.jpg', 52155522, 255, 548545, 'Pitalito-Hila');
+let auto3 = new Automovil('Mazda', 'NN', 'images/mazda.jpg', 50000000, 255, 548545, 'Pitalito-Hila');
+let auto4 = new Automovil('Mazda', 'CX-30', 'images/MAZDACX-30.jpg', 65000000, 255, 548545, 'Pitalito-Hila');
+let auto5 = new Automovil('Mazda', '2 Sedan', 'images/MAZDA2Sedan.jpg', 48500000, 255, 548545, 'Pitalito-Hila');
 
 
 let autos = [auto1, auto2, auto3, auto4, auto5]
@@ -36,7 +36,7 @@ function mostrarProducto(terminoBusqueda) {
     mainContent.innerHTML = '';    
     autos.forEach(auto => {
         if (auto.marca.toLowerCase().includes(terminoBusqueda.toLowerCase()) || auto.modelo.toLowerCase().includes(terminoBusqueda.toLowerCase())) {
-
+            
             // Caja para el producto
             let boxProducto = document.createElement("div");
             mainContent.appendChild(boxProducto);

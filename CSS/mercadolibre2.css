@@ -23,7 +23,6 @@ header {
 
 .input-busqueda {
     grid-area: input-busqueda;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +47,6 @@ header {
 
 .menu-hamburguesa {
     grid-area: menu-hamburguesa;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,20 +70,23 @@ header {
 .box-producto {
     display: grid;
     grid-template: "box-img box-info" /
-                    3fr     4fr
-    ;
+                    3fr     4fr;
     height: auto;
 }
 
 .box-img {
-    display: 'flex';
-    align-items: 'center';
-    justify-content: 'center';
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: box-img;
 }
 
 .box-info {
     grid-area: box-info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
 
 .img-auto{
@@ -126,4 +127,37 @@ header {
     bottom: 78%;
     left: 70%;
     padding: 2px;
+}
+
+@media only screen and (min-width: 500px){
+    .box-producto{
+        grid-area: boxProducto;
+    }
+
+    .left{
+        grid-area: leftA;
+
+    }
+
+    .rigth{
+        grid-area: rigth;
+    }
+
+    #mainContent{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .marca{
+        font-size: 21px;
+    }
+
+    .precio{
+        font-size: 30px;
+    }
+
+    .infExt{
+        font-size: 18px;
+    }
+    
 }
