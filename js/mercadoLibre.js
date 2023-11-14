@@ -77,13 +77,13 @@ function mostrarProducto(terminoBusqueda) {
             infExt.appendChild(textNodoInfExt);
             infExt.setAttribute('class', 'infExt');
 
-            let boxCorazon = document.createElement('div');
+            /* let boxCorazon = document.createElement('div');
             boxImg.appendChild(boxCorazon);
             boxCorazon.setAttribute('class', 'icon-corazon');
 
             let icon = document.createElement('i');
             boxCorazon.appendChild(icon);
-            icon.setAttribute('class', 'fa-regular fa-heart');
+            icon.setAttribute('class', 'fa-regular fa-heart'); */
         }
     });
 }

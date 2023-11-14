@@ -129,6 +129,30 @@ header {
     padding: 2px;
 }
 
+.box-toggle{
+    margin: 50px 0 0 50px;
+    width: 120px;
+    height: 60px;
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.box-toggle-off{
+    background-color: rgb(120,120,120);
+}
+.box-toggle-off:hover{
+    background-color: rgb(52,131,250);
+}
+
+.button-toggle-on{
+
+}
+
+.button-toggle-off{
+    
+}
+
 @media only screen and (min-width: 500px){
     /* .box-producto{
         grid-area: boxProducto;
