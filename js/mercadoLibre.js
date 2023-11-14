@@ -26,14 +26,14 @@ window.addEventListener("load", function () {
 
     mostrarProducto('');
 
-    inputBusqueda.addEventListener('input',function(){
+    inputBusqueda.addEventListener('input', function () {
         mostrarProducto(inputBusqueda.value);
     });
 });
 
 function mostrarProducto(terminoBusqueda) {
 
-    mainContent.innerHTML = '';    
+    mainContent.innerHTML = '';
     autos.forEach(auto => {
         if (auto.marca.toLowerCase().includes(terminoBusqueda.toLowerCase()) || auto.modelo.toLowerCase().includes(terminoBusqueda.toLowerCase())) {
 
@@ -90,8 +90,25 @@ function mostrarProducto(terminoBusqueda) {
 
 cargarFiltro();
 
-function cargarFiltro(){
+function cargarFiltro() {
     let boxFiltro = document.createElement('div');
     mainContent.appendChild(boxFiltro);
-    boxFiltro.setAttribute('class','box-filtro');
+    boxFiltro.setAttribute('class', 'box-filtro');
 }
+
+let boxToggle = document.getElementById('boxToggle')
+let buttonToggle = document.getElementById('buttonToggle')
+
+boxToggle.addEventListener("click", () => {
+    if (boxToggle.classList.contains("box-toggle-off")) {
+        boxToggle.classList.add('box-toggle-on');
+        boxToggle.classList.remove('box-toggle-off');
+        buttonToggle.classList.add('button-toggle-on');
+        buttonToggle.classList.remove('button-toggle-off');
+    } else {
+        boxToggle.classList.remove('box-toggle-on');
+        boxToggle.classList.add('box-toggle-off');
+        buttonToggle.classList.remove('button-toggle-on');
+        buttonToggle.classList.add('button-toggle-off');
+    }
+})

@@ -137,20 +137,34 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+    cursor: pointer; 
 }
+
 .box-toggle-off{
-    background-color: rgb(120,120,120);
+    background-color: rgb(200, 200, 200);
 }
-.box-toggle-off:hover{
+
+.box-toggle-on{
     background-color: rgb(52,131,250);
 }
 
-.button-toggle-on{
-
+.button-toggle{
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    background-color: #fff;
+    padding-left: 3px;
+    position: absolute;
+    transition: left 300ms;
 }
 
 .button-toggle-off{
-    
+    left: 3px;
+ 
+}
+
+.button-toggle-on{
+    left: 63px;
 }
 
 @media only screen and (min-width: 500px){
