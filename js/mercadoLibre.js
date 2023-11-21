@@ -10,6 +10,7 @@ class Automovil {
         this.año = año;
         this.kilometraje = kilometraje;
         this.lugar = lugar;
+        this.favorito = false;
     }
 }
 
@@ -77,13 +78,25 @@ function mostrarProducto(terminoBusqueda) {
             infExt.appendChild(textNodoInfExt);
             infExt.setAttribute('class', 'infExt');
 
-            /* let boxCorazon = document.createElement('div');
+            let boxCorazon = document.createElement('div');
             boxImg.appendChild(boxCorazon);
             boxCorazon.setAttribute('class', 'icon-corazon');
 
             let icon = document.createElement('i');
             boxCorazon.appendChild(icon);
-            icon.setAttribute('class', 'fa-regular fa-heart'); */
+            icon.setAttribute('class', 'fa-regular fa-heart');
+
+            boxCorazon.addEventListener('click', function () {
+                if (auto.favorito) {
+                    icon.classList.remove("fas");
+                    icon.classList.add("far");
+                    auto.favorito = false;
+                } else {
+                    icon.classList.remove("far");
+                    icon.classList.add("fas");
+                    auto.favorito = true;
+                }
+            })
         }
     });
 }
