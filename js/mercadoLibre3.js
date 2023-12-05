@@ -144,34 +144,33 @@ boxToggle.addEventListener("click", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var ratingInput = document.getElementById('ratingInput');
-    var calificarBtn = document.getElementById('calificarBtn');
-    var stars = document.querySelectorAll('.stars i');
-   
-    calificarBtn.addEventListener('click', function () {
-        const ratingValue = parseFloat(ratingInput.value);
-        const fullStars = Math.floor(ratingValue);
-    
+    let inputCalificacion = document.getElementById('inputCalification');
+    let btnCalificar = document.getElementById('btnCalificar');
+    let stars = document.querySelectorAll('.stars i');
+
+    btnCalificar.addEventListener('click', function () {
+        let calificacion = parseFloat(inputCalificacion.value);
+        let fullStars = Math.floor(calificacion);
+        console.log(calificacion);
         stars.forEach((star, index) => {
             star.className = 'fa-regular fa-star';
-    
+
             if (index < fullStars) {
                 star.className = 'fa-solid fa-star';
-                // Cambiar el color a dorado
-                star.style.color = 'gold';
+                
             } else if (index === fullStars) {
-                const remainder = ratingValue - fullStars;
-    
-                if (remainder > 0.2 && remainder <= 0.7) {
+
+                let residuo = calificacion - fullStars
+
+                if (residuo > 0.2 && residuo <= 0.7) {
                     star.className = 'fa-solid fa-star-half-stroke';
-                    // Cambiar el color a dorado
-                    star.style.color = 'gold';
-                } else if (remainder > 0.7) {
+                } else if (residuo > 0.7) {
                     star.className = 'fa-solid fa-star';
-                    // Cambiar el color a dorado
-                    star.style.color = 'gold';
                 }
+
+
             }
-        });
+
+        })
     });
 });
