@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificacion</title>
+    <link rel="stylesheet" href="CSS/amazon.css">
+</head>
+
+<body>
+
+    <div class="inputs">
+        <div>
+            <label>1 estrella</label>
+            <input type="number" class="calificaion-1" id="calificacion1" max="5" required>
+        </div>
+        <div>
+            <label>2 estrellas</label>
+            <input type="number" class="calificaion-2" id="calificacion2" required>
+        </div>
+        <div>
+            <label>3 estrellas</label>
+            <input type="number" class="calificaion-3" id="calificacion3" required>
+        </div>
+        <div>
+            <label>4 estrellas</label>
+            <input type="number" class="calificaion-4" id="calificacion4" required>
+        </div>
+        <div>
+            <label>5 estrellas</label>
+            <input type="number" class="calificaion-5" id="calificacion5" required>
+        </div>
+
+        <input type="button" value="Graficar" id="btnGraficar">
+    </div>
+
+    <div class="infobars">
+        <div class="textbars">
+            <span>1 estrella</span>
+            <span>2 estrellas</span>
+            <span>3 estrellas</span>
+            <span>4 estrellas</span>
+            <span>5 estrellas</span>
+        </div>
+        <div class="bars">
+            <div id="bar1" class="bar">
+                <div id="porcentaje1" class="porcentaje"></div>
+            </div>
+            <div id="bar2" class="bar">
+                <div id="porcentaje2" class="porcentaje"></div>
+            </div>
+            <div id="bar3" class="bar">
+                <div id="porcentaje3" class="porcentaje"></div>
+            </div>
+            <div id="bar4" class="bar">
+                <div id="porcentaje4" class="porcentaje"></div>
+            </div>
+            <div id="bar5" class="bar">
+                <div id="porcentaje5" class="porcentaje"></div>
+            </div>
+        </div>
+        <div class="porcenBars">
+            <span id="porcen1"></span>
+            <span id="porcen2"></span>
+            <span id="porcen3"></span>
+            <span id="porcen4"></span>
+            <span id="porcen5"></span>
+        </div>
+    </div>
+
+    <script src="js/amazon.js"></script>
+</body>
+
+</html>
