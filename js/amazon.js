@@ -22,11 +22,11 @@ btnGraficar.addEventListener('click', function(){
 
     let totalVotos = Number(calificacion1.value) + Number(calificacion2.value) + Number(calificacion3.value) + Number(calificacion4.value) + Number(calificacion5.value);
 
-    let porcentaje1 = Math.round((parseFloat(calificacion1.value)/totalVotos)*100);
-    let porcentaje2 = Math.round((parseFloat(calificacion2.value)/totalVotos)*100);
-    let porcentaje3 = Math.round((parseFloat(calificacion3.value)/totalVotos)*100);
-    let porcentaje4 = Math.round((parseFloat(calificacion4.value)/totalVotos)*100);
-    let porcentaje5 = Math.round((parseFloat(calificacion5.value)/totalVotos)*100);
+    let porcentaje1 = Math.floor((parseFloat(calificacion1.value)/totalVotos)*100);
+    let porcentaje2 = Math.floor((parseFloat(calificacion2.value)/totalVotos)*100);
+    let porcentaje3 = Math.floor((parseFloat(calificacion3.value)/totalVotos)*100);
+    let porcentaje4 = Math.floor((parseFloat(calificacion4.value)/totalVotos)*100);
+    let porcentaje5 = Math.floor((parseFloat(calificacion5.value)/totalVotos)*100);
 
     console.log(porcentaje1);
     console.log(porcentaje2);

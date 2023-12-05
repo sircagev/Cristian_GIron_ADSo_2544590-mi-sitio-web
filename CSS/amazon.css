@@ -61,6 +61,7 @@ body{
 .bar{
     border: 1px solid rgb(64, 64, 64, .5);
     border-radius: 15px;
+    overflow: hidden;
 }
 
 span{
