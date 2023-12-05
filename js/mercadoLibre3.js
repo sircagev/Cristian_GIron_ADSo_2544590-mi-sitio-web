@@ -1,6 +1,6 @@
 let inputBusqueda = document.getElementById("inputBusqueda");
 class Automovil {
-    constructor(marca, modelo, imagen, precio, ao, kilometros, ciudad ) {
+    constructor(marca, modelo, imagen, precio, ao, kilometros, ciudad) {
         this.marca = marca;
         this.modelo = modelo;
         this.precio = precio;
@@ -25,7 +25,7 @@ cargarVehiculo(auto3);
 cargarVehiculo(auto4);
 cargarVehiculo(auto5);
 
-window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function (event) {
     let busqueda = document.getElementById("inputBusqueda").value;
     if (event.key == "Enter") {
         boxProductos.innerHTML = "";
@@ -33,10 +33,10 @@ window.addEventListener("keydown", function(event) {
         if (inputUser == "mazda") {
             cargarVehiculo(auto2);
             cargarVehiculo(auto5);
-        }  
+        }
         else if (inputUser == "toyota") {
             cargarVehiculo(auto1);
-        } 
+        }
         else if (inputUser == "mitsubishi") {
             cargarVehiculo(auto3);
 
@@ -45,7 +45,7 @@ window.addEventListener("keydown", function(event) {
             cargarVehiculo(auto4);
 
         }
-    }     
+    }
 });
 /* Función  con parámetro*/
 function cargarVehiculo(auto) {
@@ -119,7 +119,7 @@ function cargarVehiculo(auto) {
 cargarFiltro();
 
 function cargarFiltro() {
-    
+
     mainContent.appendChild(boxFiltro);
     boxFiltro.setAttribute("class", "box-filtro");
 }
@@ -141,4 +141,37 @@ boxToggle.addEventListener("click", () => {
         buttonToggle.classList.remove("button-toggle-on");
         buttonToggle.classList.add("button-toggle-off");
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var ratingInput = document.getElementById('ratingInput');
+    var calificarBtn = document.getElementById('calificarBtn');
+    var stars = document.querySelectorAll('.stars i');
+   
+    calificarBtn.addEventListener('click', function () {
+        const ratingValue = parseFloat(ratingInput.value);
+        const fullStars = Math.floor(ratingValue);
+    
+        stars.forEach((star, index) => {
+            star.className = 'fa-regular fa-star';
+    
+            if (index < fullStars) {
+                star.className = 'fa-solid fa-star';
+                // Cambiar el color a dorado
+                star.style.color = 'gold';
+            } else if (index === fullStars) {
+                const remainder = ratingValue - fullStars;
+    
+                if (remainder > 0.2 && remainder <= 0.7) {
+                    star.className = 'fa-solid fa-star-half-stroke';
+                    // Cambiar el color a dorado
+                    star.style.color = 'gold';
+                } else if (remainder > 0.7) {
+                    star.className = 'fa-solid fa-star';
+                    // Cambiar el color a dorado
+                    star.style.color = 'gold';
+                }
+            }
+        });
+    });
 });
