@@ -1,5 +1,6 @@
 let inputBusqueda = document.getElementById("inputBusqueda");
 let mainContent = document.getElementById("mainContent");
+let boxProductos = document.getElementById("boxProductos");
 
 class Automovil {
     constructor(marca, modelo, imagen, precio, año, kilometraje, lugar) {
@@ -23,7 +24,7 @@ let auto5 = new Automovil('Mazda', '2 Sedan', 'images/MAZDA2Sedan.jpg', 48500000
 
 let autos = [auto1, auto2, auto3, auto4, auto5]
 
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
 
     mostrarProducto('');
 
@@ -35,12 +36,13 @@ window.addEventListener("load", function () {
 function mostrarProducto(terminoBusqueda) {
 
     mainContent.innerHTML = '';
+
     autos.forEach(auto => {
         if (auto.marca.toLowerCase().includes(terminoBusqueda.toLowerCase()) || auto.modelo.toLowerCase().includes(terminoBusqueda.toLowerCase())) {
 
             // Caja para el producto
             let boxProducto = document.createElement("div");
-            mainContent.appendChild(boxProducto);
+            boxProductos.appendChild(boxProducto);
             boxProducto.setAttribute("class", "box-producto");
 
             // Caja para la imagen
@@ -80,11 +82,11 @@ function mostrarProducto(terminoBusqueda) {
 
             let boxCorazon = document.createElement('div');
             boxImg.appendChild(boxCorazon);
-            boxCorazon.setAttribute('class', 'icon-corazon');
+            boxCorazon.setAttribute('class', 'box-icon-corazon');
 
             let icon = document.createElement('i');
             boxCorazon.appendChild(icon);
-            icon.setAttribute('class', 'fa-regular fa-heart');
+            icon.setAttribute('class', 'icon-corazon fa-regular fa-heart');
 
             boxCorazon.addEventListener('click', function () {
                 if (auto.favorito) {

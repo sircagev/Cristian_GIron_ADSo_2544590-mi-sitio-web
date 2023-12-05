@@ -2,11 +2,12 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-    height: 50px;
+    width: 100%;
+    height: 70px;
     display: grid;
     margin-bottom: 15px;
     background-color: #faf25c;
@@ -55,7 +56,6 @@ header {
 
 .carrito {
     grid-area: carrito;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,8 +63,8 @@ header {
 }
 
 .main-content {
-    display: grid;
-    height: auto;
+    width: 100%;
+    background-color: green;
 }
 
 .box-producto {
@@ -72,6 +72,7 @@ header {
     grid-template: "box-img box-info" /
                     3fr     4fr;
     height: auto;
+    border-bottom: 1px solid #ccc;
 }
 
 .box-img {
@@ -85,8 +86,7 @@ header {
     grid-area: box-info;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-   
+    justify-content: center;  
 }
 
 .img-auto{
@@ -113,20 +113,35 @@ header {
     padding: 3px;
 }
 
-.icon-corazon{
-    display: flex;
+.box-corazon {
     width: 30px;
-    height: 35px;
-    color: rgba(56, 125, 236, 0.8);
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(250,250,250,.9);
-    border-radius: 50%;
-    font-size: 17px;
+    background-color: rgb(250, 250, 250,.6);
     position: relative;
-    bottom: 78%;
-    left: 70%;
-    padding: 2px;
+    z-index: 50;
+    margin-top: -95px;
+    margin-left: -35px;
+    z-index: 5;
+}
+
+.icon-corazon{
+    color: rgb(59, 148, 249);
+    font-size: 1em;
+}
+
+.filtros-visible {
+    grid-area: filtro;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(235, 235, 235);
 }
 
 .box-toggle{
@@ -154,13 +169,13 @@ header {
     border-radius: 27px;
     background-color: #fff;
     padding-left: 3px;
-    position: absolute;
+    position: abso
+    lute;
     transition: left 300ms;
 }
 
 .button-toggle-off{
     left: 3px;
- 
 }
 
 .button-toggle-on{
@@ -212,14 +227,49 @@ header {
     .main-content{
         background-color: rgb(235,235,235,.9);
         display: grid;
-        grid-template: "box-filtro box-productos"
+        grid-template: "box-filtro box-productos" auto/
+                        1fr 3fr;
     }
     .box-productos{
         grid-area: box-productos;
     }
     .box-filtro{
+        grid-area: box-filtro;
         width: 200px;
         height: 100vh;
-        background-color: gray;
+        background-color: red;
     }
 }
+
+/* @media only screen and (min-width: 550px) {
+    .box-toggle{
+        margin: 50px 0 0 50px;
+        width: 120px;
+        height: 60px;
+        border-radius: 27px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        background-color: rgb(230, 12, 12);
+    }
+    
+    .button-toggle{
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+        background-color: white;
+        padding-left: 3px;
+        position: absolute;
+        right: 3px;
+    }
+    .button-toggle-off{
+        left: 3px;
+        transition: left 300ms;
+    }
+    .button-toggle-on{
+        left: 63px;
+        transition: left 300ms;
+    }
+
+} */
